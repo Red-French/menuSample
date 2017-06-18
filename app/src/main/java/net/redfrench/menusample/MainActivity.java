@@ -1,5 +1,6 @@
 package net.redfrench.menusample;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -45,6 +46,10 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+        else if (id == R.id.order_action) {
+            Intent intent = new Intent(this, order.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
