@@ -12,5 +12,11 @@
         android:orderInCategory="1"
         android:icon="@drawable/icon"
         android:title="@string/order_action"
-        app:showAsAction="never"/>
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/homeDelivery"
+        android:orderInCategory="2"
+        android:icon="@drawable/deliveryicon"
+        android:title="@string/title_activity_home_delivery"
+        app:showAsAction="ifRoom"/>
 </menu>
