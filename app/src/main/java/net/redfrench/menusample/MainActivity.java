@@ -51,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, order.class);
             startActivity(intent);
         }
+        else if (id == R.id.homeDelivery) {
+            Intent intent = new Intent(this, HomeDelivery.class);
+            startActivity(intent);
+        }
 
         return super.onOptionsItemSelected(item);
     }
